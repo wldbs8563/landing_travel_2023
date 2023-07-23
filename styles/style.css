@@ -1,7 +1,64 @@
+/* title */
+.title_bg {
+    background:url(../images/title_bg.jpg) no-repeat;
+    background-size: cover;
+}
+.title_bg .title {
+    display:flex; flex-flow:column;
+    align-items:center; padding:100px 0;
+}
+.title_bg .title .tag {
+    font-size:1.333rem; letter-spacing:-0.04em;
+    font-weight:700;
+}
+.title_bg .title h1 {
+    font-family:'Mingyung';
+    font-size:3.157rem; font-weight:-0.04em;
+    text-align:center; line-height:85px;
+    margin:30px 0 50px 0;
+}
+.title_bg .title h1 strong {
+    font-family:'Mingyung';
+    font-size:5rem; font-weight:-0.04em;
+}
+.title_bg .title h1 strong em {
+    font-family:'Mingyung'; color:#fff;
+    font-size:5rem; font-weight:-0.04em;
+
+}
+.title_bg .title .photo {}
+.title_bg .title .photo img {width:100%;}
+/* beach */
+.beach {
+    width:1200px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.beach .left {
+    display:flex; flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.beach .left p {
+    padding:20px; background:#ED7284;
+    display:inline-block; color:#fff;
+    border-radius:50px; font-size:1.333rem;
+}
+.beach .left h2 {
+    font-family:'Mingyung'; font-size:5rem;
+}
+.beach .left .contents {}
+.beach .left .contents li {
+    font-size:1.333rem; line-height:50px;
+    font-weight:500;
+}
+.beach .img {width:496px; height: 496px;}
+.beach .img img {width:100%;}
+/* price */
 .price {
     display:flex; flex-flow:column nowrap;
     align-items:center;
-    background:#EDEDED;
+    background:#EDEDED; padding:100px 0;
 }
 .price h1 {
     font-size:5rem;
@@ -9,13 +66,19 @@
 .price h1 img {
     width:85px; height:85px;
 }
-.price p {
+.price .time {
     font-size:1.333rem;
     text-align:center;
+    padding:50px 0; line-height:40px;
 }
-.price p strong {}
-.price p em {}
-.price p em {}
+.price p strong {
+    font-weight: 500; color:#03C75A;
+    font-size:1.333rem;
+}
+.price p em {
+    font-weight:500; color:#FE800C;
+    font-size:1.333rem;
+}
 .price .price_detail {
     width:1200px;
     display:flex; flex-flow:row nowrap;
@@ -26,13 +89,110 @@
     width:283px; height:506px;
     border-radius:30px;
 }
-.price .price_detail li p {}
+.price .price_detail li p {
+    text-align:center;
+}
 .price .price_detail li p img {
     height:100%; width:100%;
     border-radius:30px 30px 0 0;
 }
 .price .price_detail li .img {height:267px;}
-.price .price_detail li .object {}
-.price .price_detail li .discount {}
-.price .price_detail li .discount span {}
-.price .price_detail li .discount em {}
+.price .price_detail li .object {
+    font-size:1.333rem; font-weight: 700;
+    margin:38px 0 50px 0;
+}
+.price .price_detail li .discount {
+    
+}
+.price .price_detail li .discount span {
+    padding-bottom: 20px; font-size:1.333rem;
+    display:inline-block; color: #555;;
+}
+.price .price_detail li .discount span:nth-child(1) {
+    text-decoration:line-through; font-size: 1rem;
+}
+.price .price_detail li .discount em {
+    font-weight:700; margin-left:20px;
+}
+/* info */
+.info {
+    padding:100px 0;
+    background:url(../images/title_bg.jpg) no-repeat;
+    background-size: cover;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+.info h2 {
+    font-size: 5rem; font-family:'Mingyung';
+}
+.info p {}
+.info p img {
+    height:1800px; display:block;
+}
+/* attention */
+.attention {
+    background:#5CB9ED;
+    padding:100px 0;
+}
+.attention .title {
+    display: flex; flex-flow:column nowrap;
+    align-items:center; margin-bottom:157px;
+}
+.attention .title p {
+    width:100px; height:100px;
+}
+.attention .title > p img {width:100%;}
+.attention .title h2 {
+    font-size: 5rem; font-family:'Mingyung';
+}
+.attention .content1 {
+    background:#C0F7FF;
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
+    padding:50px 0;
+}
+.attention .content1 .img {
+    width:400px; height:400px;
+}
+.attention .content1 .img img {}
+.attention .content1 .right h3 {
+    font-size:1.777rem; font-weight: 700;
+}
+.attention .content1 .right p {
+    font-size:1.333rem; font-weight: 500;
+    text-align: center; margin-top:50px;
+}
+.attention .content2 {}
+.attention .content2 .img {}
+.attention .content2 .img img {}
+.attention .content2 .left h3 {
+    font-size:1.777rem; font-weight: 700;
+}
+.attention .content2 .left p {
+    font-size:1.333rem; font-weight: 500;
+    text-align: center; margin-top:50px;
+}
+/* quiz */
+.quiz {}
+.quiz h2 {}
+.quiz h3 {}
+.quiz #quiz_frm {}
+.quiz #quiz_frm fieldset {}
+.quiz #quiz_frm fieldset ul {}
+.quiz #quiz_frm fieldset ul li {}
+.quiz #quiz_frm fieldset ul li label {}
+.quiz #quiz_frm fieldset ul li label input {}
+.quiz #quiz_frm fieldset ul li label input span {}
+.quiz #quiz_frm fieldset .quiz_btn {}
+/* pension */
+.pention {}
+.pention p {}
+.pention p img {}
+.pention h2 {}
+.pention h2 em {}
+.pention .content {}
+.pention .content ul {}
+.pention .content ul li {}
+.pention .content ul li img {}
+.pention .content ul li p {}
+.pention .content ul li h3 {}
