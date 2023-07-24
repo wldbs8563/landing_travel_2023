@@ -1,6 +1,10 @@
+@font-face {
+    font-family:'Mingyung';
+    src:url(../fonts/Mingyung.ttf);
+}
 /* title */
 .title_bg {
-    background:url(../images/title_bg.jpg) no-repeat;
+    background:url(../images/bg.jpg) no-repeat;
     background-size: cover;
 }
 .title_bg .title {
@@ -61,7 +65,7 @@
     background:#EDEDED; padding:100px 0;
 }
 .price h1 {
-    font-size:5rem;
+    font-size:5rem; font-family:'Mingyung';
 }
 .price h1 img {
     width:85px; height:85px;
@@ -117,7 +121,7 @@
 /* info */
 .info {
     padding:100px 0;
-    background:url(../images/title_bg.jpg) no-repeat;
+    background:url(../images/bg.jpg) no-repeat;
     background-size: cover;
     display:flex; flex-flow:column nowrap;
     align-items:center;
@@ -133,6 +137,8 @@
 .attention {
     background:#5CB9ED;
     padding:100px 0;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
 }
 .attention .title {
     display: flex; flex-flow:column nowrap;
@@ -145,54 +151,103 @@
 .attention .title h2 {
     font-size: 5rem; font-family:'Mingyung';
 }
-.attention .content1 {
-    background:#C0F7FF;
+.attention .all {
+    display:flex; flex-flow: column nowrap;
+    align-items:center; justify-content: center;
+    width:1440px;
+}
+.attention .all .content1:nth-child(odd) {
+    background:#C0F7FF; padding:50px 300px;
+}
+.attention .all .content1 {
     display:flex; flex-flow:row nowrap;
-    align-items:center;
+    align-items:center; justify-content:space-between;
     padding:50px 0;
 }
-.attention .content1 .img {
+.attention .all .content1 .img {
     width:400px; height:400px;
 }
-.attention .content1 .img img {}
-.attention .content1 .right h3 {
+.attention .all .content1 .img img {border-radius:50%;}
+.attention .all .content1 .right h3 {
     font-size:1.777rem; font-weight: 700;
 }
-.attention .content1 .right p {
-    font-size:1.333rem; font-weight: 500;
-    text-align: center; margin-top:50px;
-}
-.attention .content2 {}
-.attention .content2 .img {}
-.attention .content2 .img img {}
-.attention .content2 .left h3 {
-    font-size:1.777rem; font-weight: 700;
-}
-.attention .content2 .left p {
+.attention .all .content1 .right p {
     font-size:1.333rem; font-weight: 500;
     text-align: center; margin-top:50px;
 }
 /* quiz */
-.quiz {}
-.quiz h2 {}
-.quiz h3 {}
+.quiz {
+    width:1200px;
+    display:flex; flex-flow:column nowrap;
+    align-items: center; padding:100px 0;
+}
+.quiz h2 {
+    font-family:'Mingyung'; font-size:5rem;
+    margin-bottom:82px;
+}
+.quiz h3 {
+    font-size:1.777rem; margin-bottom:82px;
+}
+.quiz h3 em {
+    font-size:1.777rem;
+    color:#FE800C;
+}
 .quiz #quiz_frm {}
 .quiz #quiz_frm fieldset {}
-.quiz #quiz_frm fieldset ul {}
-.quiz #quiz_frm fieldset ul li {}
+.quiz #quiz_frm fieldset ul {
+    margin-left:320px;
+}
+.quiz #quiz_frm fieldset ul li {
+    text-align:left; margin-bottom:50px;
+}
 .quiz #quiz_frm fieldset ul li label {}
 .quiz #quiz_frm fieldset ul li label input {}
 .quiz #quiz_frm fieldset ul li label input span {}
-.quiz #quiz_frm fieldset .quiz_btn {}
+.quiz #quiz_frm fieldset .quiz_btn {
+    width:880px; padding:30px 0;
+    border-radius:50px; background:#FE800C;
+    margin-top:32px;
+}
 /* pension */
-.pention {}
-.pention p {}
-.pention p img {}
-.pention h2 {}
-.pention h2 em {}
-.pention .content {}
-.pention .content ul {}
-.pention .content ul li {}
-.pention .content ul li img {}
-.pention .content ul li p {}
-.pention .content ul li h3 {}
+.pension {
+    background:#ededed;
+    text-align: center;
+    padding:100px 0;
+}
+.pension > p {
+    font-size:1.777rem
+}
+.pension p img {
+}
+.pension h2 {
+    font-family:'Mingyung';
+    font-size: 5rem;
+    margin-bottom:50px;
+}
+.pension h2 em {
+    font-family:'Mingyung';
+    font-size: 5rem; color:#FE800C;
+}
+.pension .content {width:1200px;}
+.pension .content ul {
+    display:flex; flex-flow:row wrap;
+    align-items:center; justify-content: space-around;
+}
+.pension .content ul li {
+    width:500px; height:600px;
+    background:#fff; border-radius:250px 250px 0 0;
+}
+.pension .content ul li:nth-child(3),
+.pension .content ul li:nth-child(4) {margin-top: 50px;}
+.pension .content ul li img {
+    width: 500px; height: 500px;
+    border-radius:250px 250px 0 0;
+}
+.pension .content ul li p {
+    text-align:left; margin:21px 0 0 10px;
+    font-size:1.333rem;
+}
+.pension .content ul li h3 {
+    text-align:right; margin:0 10px 21px 0;
+    font-size:1.333rem; color: #FE800C;
+}
